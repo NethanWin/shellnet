@@ -16,6 +16,8 @@ if status is-interactive
     alias delta='delta -s'
     alias new='newsboat'
     alias news='newsboat'
+    alias cls='clear'
+    alias mpv='mpv --shuffle'
     set fish_greeting
 
     export SUDO_EDITOR=/usr/bin/nvim
