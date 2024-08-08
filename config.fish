@@ -21,6 +21,7 @@ if status is-interactive
     set fish_greeting
 
     export SUDO_EDITOR=/usr/bin/nvim
+    set CONF ~/.config
 
     # default theme
     set fish_color_normal normal
@@ -45,7 +46,21 @@ if status is-interactive
     set fish_color_status red
     set fish_color_user brgreen
 
+    #ENVIERMENT
+    set -gx BROWSER librewolf
+    set -x CALCHISTORYFILE $CONF/calc/calc_history
+    set -x WINEPREFIX ~/.local/share/wine
+    set -x BASH_ENV $CONF/bash/bashrc
+    set -x HISTFILE $CONF/bash/bash-history
+    set -xg XDG_CACHE_HOME /var/cache
+    set -x RUSTUP_HOME $CONF/rustup
+    set -x CARGO_HOME $CONF/cargo
+    set -x FONTCONFIG $CONF/fon$CONF
+    set -x GTK2_RC_FILES $CONF/gtk-2.0/gtkrc-2.0
+    set -x GIT_CONFIG_GLOBAL $CONF/git/gitconfig
+
 
     zoxide init fish | source
-    eval "$(starship init fish)"
+    #eval "$(starship init fish)"
+    starship init fish | source
 end
