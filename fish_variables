@@ -1,6 +1,9 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export CALCHISTFILE:/home/net/\x2econfig/calc/\x2ecalc_history
+SETUVAR --export CALCHISTORYFILE:/home/net/\x2econfig/calc/calc_history
 SETUVAR --export TOKYONIGHT:moon
+SETUVAR --export XDG_CACHE_HOME:/var/cache
 SETUVAR __fish_initialized:3400
 SETUVAR _fisher_axkirillov_2F_tokyonight_2D_fish_files:\x7e/\x2econfig/fish/functions/_tokyonight_set_background\x2efish\x1e\x7e/\x2econfig/fish/functions/theme_tokyonight\x2efish\x1e\x7e/\x2econfig/fish/functions/tokyonight_day\x2efish\x1e\x7e/\x2econfig/fish/functions/tokyonight_moon\x2efish\x1e\x7e/\x2econfig/fish/functions/tokyonight_night\x2efish\x1e\x7e/\x2econfig/fish/functions/tokyonight_storm\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/tokyonight\x2efish
 SETUVAR _fisher_plugins:axkirillov/tokyonight\x2dfish

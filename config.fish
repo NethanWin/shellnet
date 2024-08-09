@@ -16,9 +16,12 @@ if status is-interactive
     alias delta='delta -s'
     alias new='newsboat'
     alias news='newsboat'
+    alias cls='clear'
+    alias mpv='mpv --shuffle'
     set fish_greeting
 
     export SUDO_EDITOR=/usr/bin/nvim
+    set CONF ~/.config
 
     # default theme
     set fish_color_normal normal
@@ -43,7 +46,32 @@ if status is-interactive
     set fish_color_status red
     set fish_color_user brgreen
 
+    #ENVIERMENT
+    set -gx BROWSER librewolf
+    set -x CALCHISTORYFILE $CONF/calc/calc_history
+    set -x WINEPREFIX ~/.local/share/wine
+    set -x BASH_ENV $CONF/bash/bashrc
+    set -x HISTFILE $CONF/bash/bash-history
+    set -xg XDG_CACHE_HOME /var/cache
+    set -x RUSTUP_HOME $CONF/rustup
+    set -x CARGO_HOME $CONF/cargo
+    set -x FONTCONFIG $CONF/fon$CONF
+    set -x GTK2_RC_FILES $CONF/gtk-2.0/gtkrc-2.0
+    set -x GIT_CONFIG_GLOBAL $CONF/git/gitconfig
+
+    # not checked
+    set -x ANDROID_PREFS_ROOT $CONF/android
+    set -x XDG_DATA_HOME $CONF
+    set -x XDG_CONFIG_HOME $CONF
+    set -x GNUPGHOME $CONF/gnupg
+    set -x MONO_CFG_DIR $CONF/mono
+    set -x NPM_CONFIG_USERCONFIG $CONF/npm/npmrc
+    set -x SSH_HOME $CONF/ssh
+    set -x VIMINFO $CONF/vim/VIMINFO
+    set -x WGETRC $CONF/wget-hsts
+    set -x YAY_CONF $CONF/yay/config
+    set -x XDG_DOWNLOAD_DIR "$HOME/downloads"
 
     zoxide init fish | source
-    eval "$(starship init fish)"
+    starship init fish | source
 end
