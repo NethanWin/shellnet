@@ -59,8 +59,19 @@ if status is-interactive
     set -x GTK2_RC_FILES $CONF/gtk-2.0/gtkrc-2.0
     set -x GIT_CONFIG_GLOBAL $CONF/git/gitconfig
 
+    # not checked
+    set -x ANDROID_PREFS_ROOT $CONF/android
+    set -x XDG_DATA_HOME $CONF
+    set -x XDG_CONFIG_HOME $CONF
+    set -x GNUPGHOME $CONF/gnupg
+    set -x MONO_CFG_DIR $CONF/mono
+    set -x NPM_CONFIG_USERCONFIG $CONF/npm/npmrc
+    set -x SSH_HOME $CONF/ssh
+    set -x VIMINFO $CONF/vim/VIMINFO
+    set -x WGETRC $CONF/wget-hsts
+    set -x YAY_CONF $CONF/yay/config
+    set -x XDG_DOWNLOAD_DIR "$HOME/downloads"
 
     zoxide init fish | source
-    #eval "$(starship init fish)"
     starship init fish | source
 end
