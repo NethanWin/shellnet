@@ -8,7 +8,7 @@ if status is-interactive
     alias df='duf'
     alias chx='chmod +x'
     #    alias find='fd'
-    alias du='du -sh'
+    #    alias du='du -sh'
     alias syu='sudo pacman -Syu'
     alias rns='sudo pacman -Rns'
     alias sp='sudo pacman'
@@ -18,6 +18,8 @@ if status is-interactive
     alias news='newsboat'
     alias cls='clear'
     alias mpv='mpv --shuffle'
+    alias yt-no-name='yt-dlp -x -q --audio-format mp3 --no-playlist'
+    alias yt='yt-dlp -x -q --audio-format mp3 --no-playlist -o'
     set fish_greeting
 
     export SUDO_EDITOR=/usr/bin/nvim
