@@ -17,9 +17,14 @@ if status is-interactive
     alias new='newsboat'
     alias news='newsboat'
     alias cls='clear'
-    alias mpv='mpv --shuffle'
+    #alias mpv='mpv' #--thumbnails=none'
+    #alias mpvs='mpv --shuffle'# --thumbnails=none'
+    alias mpva='mpv --shuffle ~/music'
     alias yt-no-name='yt-dlp -x -q --audio-format mp3 --no-playlist'
     alias yt='yt-dlp -x -q --audio-format mp3 --no-playlist -o'
+    # make it work
+    #alias spot='https://spotify-downloader.com/?link='
+    alias rename-bulk='vimv'
     set fish_greeting
 
     export SUDO_EDITOR=/usr/bin/nvim
