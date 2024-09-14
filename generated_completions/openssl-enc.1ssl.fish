@@ -10,7 +10,7 @@ complete -c 'openssl-enc.1ssl' -s e -d 'X Item "-e" Encrypt the input data: this
 complete -c 'openssl-enc.1ssl' -s d -d 'X Item "-d" Decrypt the input data'
 complete -c 'openssl-enc.1ssl' -s a -d 'X Item "-a" Base64 process the data'
 complete -c 'openssl-enc.1ssl' -o base64 -d 'X Item "-base64" Same as -a'
-complete -c 'openssl-enc.1ssl' -s A -d 'X Item "-A" If the -a option is set then base64 process the data on one line'
+complete -c 'openssl-enc.1ssl' -s A -d 'X Item "-A" If the -a option is set then base64 encoding produces output with…'
 complete -c 'openssl-enc.1ssl' -s k -d 'X Item "-k password" The password to derive the key from'
 complete -c 'openssl-enc.1ssl' -o kfile -d 'X Item "-kfile filename" Read the password to derive the key from the first l…'
 complete -c 'openssl-enc.1ssl' -o md -d 'X Item "-md digest" Use the specified digest to create the key from the passp…'

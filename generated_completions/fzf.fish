@@ -57,7 +57,7 @@ complete -c fzf -l marker-multi-line -d 'Multi-select marker for multi-line entr
 complete -c fzf -l header -d 'The given string will be printed as the sticky header'
 complete -c fzf -l header-lines -d 'The first N lines of the input are treated as the sticky header'
 complete -c fzf -l header-first -d 'Print header before the prompt line'
-complete -c fzf -l ellipsis -d 'Ellipsis to show when line is truncated (default: \'. \') . SS Display'
+complete -c fzf -l ellipsis -d 'Ellipsis to show when line is truncated (default: \'Â·Â·\') . SS Display'
 complete -c fzf -l ansi -d 'Enable processing of ANSI color codes'
 complete -c fzf -l tabstop -d 'Number of spaces for a tab character (default: 8)'
 complete -c fzf -l color -d 'Color configuration'

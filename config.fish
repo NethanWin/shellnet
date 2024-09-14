@@ -4,8 +4,11 @@ if status is-interactive
     alias vim='nvim'
     alias paint='kolourpaint'
     alias ll='exa --oneline --all'
+    alias lla='exa --long --all'
+    alias cp='advcp -g'
+    alias rf='librewolf ~/documents/study/rf-course/matirial/*'
     alias grep='grep --color=auto'
-    alias df='duf'
+    alias df='duf -hide special'
     alias chx='chmod +x'
     #    alias find='fd'
     #    alias du='du -sh'
@@ -54,7 +57,7 @@ if status is-interactive
     set fish_color_user brgreen
 
     #ENVIERMENT
-    set -gx BROWSER librewolf
+    set -gx BROWSER librewolf --profile ~/.config/librewolf/public --new-instance
     set -x CALCHISTORYFILE $CONF/calc/calc_history
     set -x WINEPREFIX ~/.local/share/wine
     set -x BASH_ENV $CONF/bash/bashrc
@@ -78,6 +81,9 @@ if status is-interactive
     set -x WGETRC $CONF/wget-hsts
     set -x YAY_CONF $CONF/yay/config
     set -x XDG_DOWNLOAD_DIR "$HOME/downloads"
+    set -x __NV_PRIME_RENDER_OFFLOAD 1
+    set -x __GLX_VENDOR_LIBRARY_NAME nvidia
+    set -x __VK_LAYER_NV_optimus NVIDIA_only
 
     zoxide init fish | source
     starship init fish | source
