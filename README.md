@@ -1,3 +1,4 @@
-"""rm -rf ~/.config/fish
+```bash
+rm -rf ~/.config/fish
 git clone https://github.com/NethanWin/shellnet ~/.config/fish
-bash ~/.config/fish/install.sh"""
+bash ~/.config/fish/install.sh
