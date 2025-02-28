@@ -1,33 +1,34 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
-    alias dua='dua i'
+    alias desktop='cd /usr/share/applications'
+    alias dua='dua -x i'
     alias vim='nvim'
     alias paint='kolourpaint'
     alias ll='exa --oneline --all'
     alias lla='exa --long --all'
     alias cp='advcp -g'
-    alias rf='librewolf ~/documents/study/rf-course/matirial/*'
     alias grep='grep --color=auto'
-    alias df='duf -hide special'
+    alias df='duf -hide special -hide-mp "/boot"'
     alias chx='chmod +x'
-    #    alias find='fd'
-    #    alias du='du -sh'
     alias syu='sudo pacman -Syu'
     alias rns='sudo pacman -Rns'
     alias sp='sudo pacman'
     alias diff='delta'
     alias delta='delta -s'
-    alias new='newsboat'
-    alias news='newsboat'
-    alias cls='clear'
-    #alias mpv='mpv' #--thumbnails=none'
-    #alias mpvs='mpv --shuffle'# --thumbnails=none'
+    alias new='newsboat -r'
     alias mpva='mpv --shuffle ~/music'
     alias yt-no-name='yt-dlp -x -q --audio-format mp3 --no-playlist'
     alias yt='yt-dlp -x -q --audio-format mp3 --no-playlist -o'
-    # make it work
-    #alias spot='https://spotify-downloader.com/?link='
     alias rename-bulk='vimv'
+
+    alias gtd='cd ~/documents/gtd'
+    alias cdfish='cd ~/.config/fish'
+    alias hypr='nvim ~/.config/hypr/hyprland.conf'
+    alias inbox='nvim ~/documents/gtd/inbox'
+    alias torrent='cd /drive2/torrent'
+    alias docs='cd ~/documents'
+    alias down='cd ~/downloads'
+
     set fish_greeting
 
     export SUDO_EDITOR=/usr/bin/nvim
